@@ -6,6 +6,20 @@ function MetaForm() {
     <Form>
       <FormGroup row>
         <Label sm={2} for="formGroupExampleInput">
+          URL
+        </Label>
+        <Col>
+          <Input
+            sm={10}
+            type="text"
+            class="form-control"
+            id="url"
+            placeholder="www.reqview.com"
+          />
+        </Col>
+      </FormGroup>
+      <FormGroup row>
+        <Label sm={2} for="formGroupExampleInput">
           Title
         </Label>
         <Col>
@@ -13,22 +27,36 @@ function MetaForm() {
             sm={10}
             type="text"
             class="form-control"
-            id="formGroupExampleInput"
+            id="title"
             placeholder="Click Reqview"
           />
         </Col>
       </FormGroup>
       <FormGroup row>
         <Label sm={2} for="formGroupExampleInput2">
-          Metadata
+          Description
         </Label>
         <Col>
           <Input
             sm={10}
             type="text"
             class="form-control"
-            id="formGroupExampleInput2"
+            id="description"
             placeholder="ReqView is the best. Do not hesitate and buy it."
+          />
+        </Col>
+      </FormGroup>
+      <FormGroup row>
+        <Label sm={2} for="formGroupExampleInput2">
+          Bold kw
+        </Label>
+        <Col>
+          <Input
+            sm={10}
+            type="text"
+            class="form-control"
+            id="bold"
+            placeholder="Requirements management"
           />
         </Col>
       </FormGroup>
