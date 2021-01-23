@@ -1,7 +1,7 @@
 import React from "react";
 import { Form, FormGroup, Label, Col, Input } from "reactstrap";
 
-function MetaForm() {
+function MetaForm(props) {
   return (
     <Form>
       <FormGroup row>
@@ -12,10 +12,11 @@ function MetaForm() {
           <Input
             sm={10}
             type="text"
-            class="form-control"
+            className="form-control"
             id="url"
             placeholder="www.reqview.com"
           />
+          {props.url}
         </Col>
       </FormGroup>
       <FormGroup row>
@@ -26,10 +27,11 @@ function MetaForm() {
           <Input
             sm={10}
             type="text"
-            class="form-control"
+            className="form-control"
             id="title"
             placeholder="Click Reqview"
           />
+          {props.title}
         </Col>
       </FormGroup>
       <FormGroup row>
@@ -40,10 +42,11 @@ function MetaForm() {
           <Input
             sm={10}
             type="text"
-            class="form-control"
+            className="form-control"
             id="description"
             placeholder="ReqView is the best. Do not hesitate and buy it."
           />
+          {props.description}
         </Col>
       </FormGroup>
       <FormGroup row>
@@ -54,10 +57,11 @@ function MetaForm() {
           <Input
             sm={10}
             type="text"
-            class="form-control"
-            id="bold"
+            classNameName="form-control"
+            id="keyword"
             placeholder="Requirements management"
           />
+          {props.keyword}
         </Col>
       </FormGroup>
     </Form>

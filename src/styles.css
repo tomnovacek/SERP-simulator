@@ -2,3 +2,112 @@
   font-family: sans-serif;
   text-align: center;
 }
+body {
+  font-family: Arial;
+  font-size: 14px;
+  background-color: rgb(255, 255, 255);
+  margin-left: 13em;
+}
+
+label {
+  display: inline-block;
+  width: 180px;
+  margin-bottom: 0.625em;
+}
+
+input {
+  width: 130px;
+}
+h1,
+h2,
+h3 {
+  margin-top: 3em;
+}
+
+h3 {
+  text-align: left;
+}
+
+.short {
+  width: 250px;
+}
+
+.long {
+  width: 950px;
+}
+
+.serp-preview {
+  width: 600px;
+  margin-top: 3em;
+  margin-left: 13em;
+}
+
+.serp-arrow {
+  border-bottom-color: rgb(84, 84, 84);
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-left-color: rgba(0, 0, 0, 0);
+  border-left-style: solid;
+  border-left-width: 4px;
+  border-right-color: rgba(0, 0, 0, 0);
+  border-right-style: solid;
+  border-right-width: 4px;
+  border-top-color: rgb(84, 84, 84);
+  border-top-style: solid;
+  border-top-width: 5px;
+  color: rgb(128, 128, 128);
+  cursor: default;
+  font-family: arial, sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  height: 0px;
+  position: absolute;
+  line-height: 27px;
+  margin-left: 3px;
+  margin-top: 6px;
+  text-align: center;
+  user-select: none;
+  visibility: visible;
+  white-space: nowrap;
+  width: 0px;
+}
+
+.serp-title {
+  color: rgb(26, 13, 171);
+  cursor: pointer;
+  font-family: arial, sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 32px;
+  text-align: left;
+  text-decoration: none;
+  visibility: visible;
+  white-space: nowrap;
+}
+
+.serp-url {
+  color: rgb(84, 84, 84);
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 16px;
+  text-align: left;
+  visibility: visible;
+  white-space: nowrap;
+}
+
+.serp-description {
+  color: rgb(84, 84, 84);
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  text-align: left;
+  visibility: visible;
+  word-wrap: break-word;
+}
+
+.data {
+  color: lightgrey;
+}
