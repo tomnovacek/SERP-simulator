@@ -8,12 +8,13 @@ export default function App() {
   return (
     <div className="App">
       <h1>SERP Simulator</h1>
-      <h2>Insert titles and meta description</h2>
-      <div>
-        <MetaForm />
-      </div>
+
       <div>
         <h3>Google SERP Preview</h3>
+        <h2>Update titles and meta description</h2>
+        <div>
+          <MetaForm />
+        </div>
         <Serp
           url="https://reqview.com"
           title="Requirements Management Tool | Easy & Flexible"
