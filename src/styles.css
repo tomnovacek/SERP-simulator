@@ -6,11 +6,16 @@
   background-color: rgb(255, 255, 255);
   margin-left: 4em;
 }
+form {
+  margin-left: 3em;
+  border-radius: 1em;
+  padding: 3em 2em;
+  background-color: lightgrey;
+}
 
 label {
   display: inline-block;
   text-align: right;
-  width: 180px;
   margin-bottom: 0.625em;
 }
 
