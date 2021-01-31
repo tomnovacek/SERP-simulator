@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Form, FormGroup, Label, Col, Input } from "reactstrap";
 import "./styles.css";
-import MetaForm from "./Form";
 import Serp from "./Serp";
 import "bootstrap/dist/css/bootstrap.min.css";
 

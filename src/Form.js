@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Form, FormGroup, Label, Col, Input } from "reactstrap";
-import rp from "request-promise";
-import cheerio from "cheerio";
+/* import rp from "request-promise";
+import cheerio from "cheerio"; */
 
 function MetaForm() {
   const [state, setState] = useState({});
