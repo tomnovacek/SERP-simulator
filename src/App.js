@@ -7,6 +7,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   const [state, setState] = useState({});
+  const url = "https://reqview.com";
+  const title = "Requirements Management Tool | Easy & Flexible";
+  const description =
+    "Requirements management for SW and HW products. Traceability to tests and risks. ISO/IEEE templates. Open data format. Free download and trial!";
   /*   const [state, setState] = useState([{
   url: "reqview.com", 
   title: "Requirements Management Tool | Easy & Flexible",
@@ -92,30 +96,14 @@ function App() {
           </Form>
         </div>
         <Serp
-          url={state.url}
-          title={state.title}
-          description={state.description}
+          url={state.url ? state.url : url}
+          title={state.title ? state.title : title}
+          description={state.description ? state.description : description}
         />
-        <Serp
-          url="https://reqview.com"
-          title="Requirements Management Tool | Easy & Flexible"
-          description="Requirements management for SW and HW products. Traceability to tests and risks. ISO/IEEE templates. Open data format. Free download and trial!"
-        />
-        <Serp
-          url="https://reqview.com"
-          title="Requirements Management Tool | Easy & Flexible"
-          description="Requirements management for SW and HW products. Traceability to tests and risks. ISO/IEEE templates. Open data format. Free download and trial!"
-        />
-        <Serp
-          url="https://reqview.com"
-          title="Requirements Management Tool | Easy & Flexible"
-          description="Requirements management for SW and HW products. Traceability to tests and risks. ISO/IEEE templates. Open data format. Free download and trial!"
-        />
-        <Serp
-          url="https://reqview.com"
-          title="Requirements Management Tool | Easy & Flexible"
-          description="Requirements management for SW and HW products. Traceability to tests and risks. ISO/IEEE templates. Open data format. Free download and trial!"
-        />
+        <Serp url={url} title={title} description={description} />
+        <Serp url={url} title={title} description={description} />
+        <Serp url={url} title={title} description={description} />
+        <Serp url={url} title={title} description={description} />
       </div>
     </div>
   );
