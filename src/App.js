@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Form, FormGroup, Label, Col, Input } from "reactstrap";
 import "./styles.css";
+import Crawl from "./Crawl";
 import Serp from "./Serp";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -22,10 +23,8 @@ function App() {
 
   return (
     <div className="App">
-      <h1>SERP Simulator</h1>
-
+      <h1>Google SERP Simulator</h1>
       <div>
-        <h3>Google SERP Preview</h3>
         <h2>Update titles and meta description</h2>
         <div>
           <Form>
@@ -91,9 +90,12 @@ function App() {
                 />
               </Col>
             </FormGroup>
-            <button>Update</button>
+            {/*  <button>Update</button> */}
           </Form>
         </div>
+        {/* 
+        <Crawl />
+         */}
         <Serp
           url={state.url ? state.url : url}
           title={state.title ? state.title : title}
@@ -119,6 +121,9 @@ function App() {
           title="How To Progress from Traceability Matrix to Automatic Reports?"
           description="Why Is Requirements Traceability Important? · General: IEC 61508 — Functional Safety of Electrical/Electronic/Programmable Electronic Safety- "
         />
+        <Serp url={url} title={title} description={description} />
+        <Serp url={url} title={title} description={description} />
+        <Serp url={url} title={title} description={description} />
       </div>
     </div>
   );
