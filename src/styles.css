@@ -4,7 +4,7 @@
   font-family: Arial;
   font-size: 14px;
   background-color: rgb(255, 255, 255);
-  margin-left: 4em;
+  margin-left: 1em;
 }
 form {
   margin-left: 3em;
@@ -19,21 +19,15 @@ label {
   margin-bottom: 0.625em;
 }
 
-input {
-  width: 130px;
-}
 h1,
 h2,
 h3 {
   padding: 1em 1em;
 }
-
-.short {
-  width: 250px;
-}
-
-.long {
-  width: 950px;
+.form {
+  margin-top: 3em;
+  width: 700px;
+  font-size: 14px;
 }
 
 .serp-preview {

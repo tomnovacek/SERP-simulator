@@ -1,2 +1,3 @@
 # SERP-simulator
-Created with CodeSandbox
+
+Easy SERP simulator for Google search engine
