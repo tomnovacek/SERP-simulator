@@ -11,10 +11,6 @@ function App() {
   const title = "Requirements Management Tool | Easy & Flexible";
   const description =
     "Requirements management for SW and HW products. Traceability to tests and risks. ISO/IEEE templates. Open data format. Free download and trial!";
-  /*   const [state, setState] = useState([{
-  url: "reqview.com", 
-  title: "Requirements Management Tool | Easy & Flexible",
-  description: "Requirements management for SW and HW products. Traceability to tests and risks. ISO/IEEE templates. Open data format. Free download and trial!"}]); */
 
   const handleChange = (e) => {
     setState({ ...state, [e.target.name]: e.target.value });
@@ -93,9 +89,7 @@ function App() {
             {/*  <button>Update</button> */}
           </Form>
         </div>
-        {/* 
-        <Crawl />
-         */}
+
         <Serp
           url={state.url ? state.url : url}
           title={state.title ? state.title : title}
@@ -112,14 +106,14 @@ function App() {
           description="A traceability matrix in software testing — otherwise known as a test matrix — is used to prove that tests have been run. It documents test cases, test runs, and test results. Requirements and issues may also be used in a test matrix."
         />
         <Serp
-          url="www.reqview.com › blog › 2016-05-31-news-end-to-e..."
+          url="www.reqview.com › blog › 2016-05-31-news-end-to-e..." //tracability matrix
           title="How To Progress from Traceability Matrix to Automatic Reports?"
           description="Dec 30, 2020 — A traceability matrix is a table displaying relations between high-level stakeholder requirements, detailed software or hardware requirements, ..."
         />
         <Serp
-          url="www.reqview.com › blog › 2016-05-31-news-end-to-e..."
+          url="www.reqview.com › blog › 2016-05-31-news-end-to-e..." //traceability report
           title="How To Progress from Traceability Matrix to Automatic Reports?"
-          description="Why Is Requirements Traceability Important? · General: IEC 61508 — Functional Safety of Electrical/Electronic/Programmable Electronic Safety- "
+          description="Dec 30, 2020 — Why Is Requirements Traceability Important? · General: IEC 61508 — Functional Safety of Electrical/Electronic/Programmable Electronic Safety- "
         />
         <Serp url={url} title={title} description={description} />
         <Serp url={url} title={title} description={description} />
