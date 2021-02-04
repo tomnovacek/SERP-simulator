@@ -20,7 +20,7 @@ function App() {
     <div className="App">
       <h1>Google SERP Simulator</h1>
       <div className="row">
-        <div className="column">
+        <div id="form" className="column" style={{display:"none"}}>
           <Form className="form">
             <FormGroup row>
               <Label sm={2} for="url">
@@ -93,29 +93,37 @@ function App() {
               title={state.title ? state.title : title}
               description={state.description ? state.description : description}
             />
-            <Serp
-              url="https://www.guru99.com/traceability-matrix"
-              title="What is Requirements Traceability Matrix (RTM)? Example ..."
-              description="A Traceability Matrix is a document that co-relates any two-baseline documents that require a many-to-many ..."
-            />
-            <Serp
-              url="www.perforce.com › resources › requirements-traceabil..."
-              title="What Is a Requirements Traceability Matrix? Your A–Z Guide ..."
-              description="A traceability matrix in software testing — otherwise known as a test matrix — is used to prove that tests have been run. It documents test cases, test runs, and test results. Requirements and issues may also be used in a test matrix."
-            />
-            <Serp
-              url="www.reqview.com › blog › 2016-05-31-news-end-to-e..." //traceability matrix
-              title="How To Progress from Traceability Matrix to Automatic Reports?"
-              description="Dec 30, 2020 — A traceability matrix is a table displaying relations between high-level stakeholder requirements, detailed software or hardware requirements, ..."
-            />
-            <Serp
-              url="www.reqview.com › blog › 2016-05-31-news-end-to-e..." //traceability report
-              title="How To Progress from Traceability Matrix to Automatic Reports?"
-              description="Dec 30, 2020 — Why Is Requirements Traceability Important? · General: IEC 61508 — Functional Safety of Electrical/Electronic/Programmable Electronic Safety- "
-            />
-            <Serp url={url} title={title} description={description} />
-            <Serp url={url} title={title} description={description} />
-            <Serp url={url} title={title} description={description} />
+              <Serp
+                url="www.reqview.com › blog › 2016-05-31-news-end-to-e..." //playground - questions, numbers, why, how to, informational intent, ? rating metadata
+                title="(How to, What is) Requirements Traceability Matrix (RTM) or Automatic Traceability Reports?"
+                description="Dec 30, 2020 — A traceability matrix is a table displaying relations between high-level stakeholder requirements, detailed software or hardware requirements, ..." 
+              />
+              <Serp
+                url="www.reqview.com › blog › 2016-05-31-news-end-to-e..." //traceability report
+                title="How To Progress from Traceability Matrix to Automatic Reports?"
+                description="Dec 30, 2020 — Why Is Requirements Traceability Important? · General: IEC 61508 — Functional Safety of Electrical/Electronic/Programmable Electronic Safety- "
+              />
+              <Serp
+                url="www.reqview.com › blog › 2016-05-31-news-end-to-e..." //traceability matrix
+                title="How To Progress from Traceability Matrix to Automatic Reports?"
+                description="Dec 30, 2020 — A traceability matrix is a table displaying relations between high-level stakeholder requirements, detailed software or hardware requirements, ..."
+              />
+              <Serp 
+                url="www.reqview.com › blog › 2016-05-31-news-end-to-e..." //our metadata
+                title="How To Progress from Traceability Matrix to Automatic Reports?" 
+                description="Maintaining a requirements traceability matrix is time-consuming and error prone. Use ReqView to manage and analyze end-to-end traceability easily. Try it for free!" 
+              />
+              <Serp
+                url="https://www.guru99.com/traceability-matrix"
+                title="What is Requirements Traceability Matrix (RTM)? Example ..."
+                description="A Traceability Matrix is a document that co-relates any two-baseline documents that require a many-to-many ..."
+              />
+              <Serp
+                url="www.perforce.com › resources › requirements-traceabil..."
+                title="What Is a Requirements Traceability Matrix? Your A–Z Guide ..."
+                description="A traceability matrix in software testing — otherwise known as a test matrix — is used to prove that tests have been run. It documents test cases, test runs, and test results. Requirements and issues may also be used in a test matrix."
+              />
+              <Serp url={url} title={title} description={description} />
           </div>
       </div>
     </div>
