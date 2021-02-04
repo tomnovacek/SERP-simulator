@@ -102,6 +102,12 @@ h3 {
   word-wrap: break-word;
 }
 
+.serp-counter {
+  font-size: 10px;
+  color: #cccccc;
+  margin-left: 3em;
+}
+
 .data {
   color: lightgrey;
 }
